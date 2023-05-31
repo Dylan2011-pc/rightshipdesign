@@ -17,14 +17,14 @@ tbody{
         box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 20px -20px;
     }
     &-card,&-port-card{
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 9px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
         &:hover{
             box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 15px;
             transform: translateY(-3px);
         }
     }
     &-port-card-header{
-        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        box-shadow: rgba(0, 0, 0, 0.08) 0.95px 0.95px 2.6px;
     }
 }
 
@@ -44,12 +44,16 @@ tbody{
     td,th{
         font-size: 12px;
     }
+    .shadow-datatable td, .shadow-datatable th{
+        width: max-content;
+        white-space: nowrap;
+    }
 }
 
 .tooltip {
     position: absolute;
     top: 35px;
-    right: 60px;
+    right: 50px;
     padding: 8px;
     background-color: transparent;
     color: #4a5568;

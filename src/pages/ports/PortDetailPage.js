@@ -6,6 +6,7 @@ import DataTable from "../../components/data_table/DataTable";
 import DetailCards from "../../components/cards/DetailCard";
 import CardIcon from "./assets/icons/Card.svg";
 import TableIcon from "./assets/icons/TableCells.svg";
+import BackIcon from "./assets/icons/ChevronLeftArrow.svg"
 
 
 const PortDetailPage = () => {
@@ -55,15 +56,18 @@ const PortDetailPage = () => {
 
   // Render the port details
   return (
-    <div className='w-full h-full min-[900px]:px-[35px] px-[20px]'>
-      <div className='w-full py-[35px] bg-white'>
-        <p className='font-extrabold text-[36px] leading-[36px] text-[#F36B3C]'>
+    <div className='w-full h-full min-[900px]:px-[35px] min-[500px]:px-[20px] px-[14px]'>
+      <div className='w-full py-[35px] bg-white flex gap-x-3 items-start'>
+        <a href="/port">
+          <img className='w-[36px] h-[36px] max-[600px]:h-[24px] max-[600px]:w-[24px]' src={BackIcon} alt="" />
+        </a>
+        <p className='font-extrabold text-[36px] max-[600px]:text-[24px] max-[600px]:leading-[24px] leading-[36px] text-[#F36B3C]'>
           {port.Name}'s Detail
         </p>
       </div>
       <section className='pb-[35px]'>
         <div className='w-full flex justify-between items-center'>
-            <h1 className='text-[22px] leading-[22px] font-semibold'>
+            <h1 className='sm:text-[22px] text-[18px] leading-[22px] font-semibold'>
                 Basic information
             </h1>
             <div className='flex justify-end gap-x-5'>
@@ -88,10 +92,10 @@ const PortDetailPage = () => {
       </section>
 
       <section className='pt-[35px] space-y-5'>
-        <h1 className='text-[22px] leading-[22px] font-semibold'>
+        <h1 className='sm:text-[22px] text-[18px] leading-[22px] font-semibold'>
            Vessels data
         </h1>
-        <div className='overflow-x-auto'>
+        <div className='overflow-x-auto shadow-datatable'>
           <DataTable columns={columns} data={data}></DataTable>
         </div>
       </section>

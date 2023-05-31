@@ -8,7 +8,7 @@ const Avatar = () => {
 
   return (
     <div className='relative cursor-pointer float-right'>
-        <img className='w-[40px] h-[40px]' src={ExampleAvatarImg} alt="" />
+        <img className='w-[40px] h-[40px] ' src={ExampleAvatarImg} alt="" />
     </div>
   );
 };

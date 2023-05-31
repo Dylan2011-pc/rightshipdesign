@@ -47,9 +47,9 @@ const PortsPage = () => {
       : [];
 
   return (
-    <div className="w-full h-full min-[900px]:px-[35px] px-[20px]">
+    <div className="w-full h-full min-[900px]:px-[35px] min-[500px]:px-[20px] px-[14px]">
       <div className="w-full py-[35px] bg-white flex justify-between items-center relative">
-        <p className="font-extrabold text-[36px] leading-[36px] text-[#F36B3C]">
+        <p className="font-extrabold text-[36px] max-[600px]:text-[24px] leading-[36px] text-[#F36B3C]">
           Ports
         </p>
         <div className="flex justify-end gap-x-5 ">
@@ -75,7 +75,7 @@ const PortsPage = () => {
         viewMode !== 'table' ?
         <CardList data={data} />      
         :
-        <div className='overflow-x-auto'>
+        <div className='overflow-x-auto shadow-datatable'>
           <DataTable columns={columns} data={data} navigation={true}></DataTable>
         </div>
       }

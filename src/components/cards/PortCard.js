@@ -26,7 +26,7 @@ const PortCard = ({ titles, index, data }) => {
         }
     
         convertArraysToObject(titles, data);
-      }, []);
+      }, [data, titles]);
 
     const toPortDetailPage = (port) => {
         

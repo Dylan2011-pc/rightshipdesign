@@ -36,7 +36,7 @@ const LeftSideNavigationBar = observer((props) => {
 
   return (
     <>
-      <aside className={`fixed min-[900px]:left-0 ${showLeftSideBar? 'left-0' :'left-[-200%]'} top-0 min-[1024px]:w-[280px] min-[900px]:w-[180px] max-[900px]:w-[250px] pt-[180px] bg-white z-40 border-r border-r-[#E8E8E8] h-screen transition-all duration-300`}>
+      <aside className={`fixed min-[900px]:left-0 ${showLeftSideBar? 'left-0' :'left-[-200%]'} top-0 min-[1024px]:w-[280px] min-[900px]:w-[180px] max-[900px]:w-[250px] sm:pt-[180px] pt-[100px] bg-white z-40 border-r border-r-[#E8E8E8] h-screen transition-all duration-300`}>
           <ul>
               {renderSideBarListItems()}
           </ul>

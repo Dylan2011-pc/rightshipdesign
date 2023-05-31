@@ -17,7 +17,7 @@ const Tooltip = () => {
   }
 
   return (
-    <div className="tooltip">
+    <div className="tooltip max-[600px]:text-[12px]">
       <p>Click here to change view mode! </p>
     </div>
   );

@@ -3,7 +3,7 @@ import "../data_table/assets/index.scss";
 
 const CardsComponent = ({ data }) => {
   return (
-    <div className="grid min-[600px]:grid-cols-3 grid-cols-2 sm:gap-5 gap-4">
+    <div className="grid min-[600px]:grid-cols-3 grid-cols-2 min-[900px]:gap-5 sm:gap-4 gap-3">
       {Object.entries(data).map(([key, value]) => (
         <div
           key={key}
@@ -15,7 +15,7 @@ const CardsComponent = ({ data }) => {
             key === 'Description' ? 'col-span-2' : ''
           }`}
         >
-          <h3 className="font-extrabold text-sm">{key}</h3>
+          <h3 className="font-extrabold min-[500px]:text-sm text-xs">{key}</h3>
           <p className={`font-medium text-[#777777] ${key === 'Name' ? 'min-[900px]:text-[28px] text-[22px] flex justify-center items-center h-full' : 'min-[900px]:text-xl min-[500px]:text-lg text-sm'}`}>
             {value}
           </p>

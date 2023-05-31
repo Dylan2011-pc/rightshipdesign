@@ -26,7 +26,7 @@ const DataTable = ({ columns, data , navigation }) => {
   };
 
   return (
-    <table {...getTableProps()} className='border-collapse w-full shadow-datatable relative overflow-x-auto'>
+    <table {...getTableProps()} className='border-collapse w-full relative overflow-x-auto'>
       <thead className='sticky top-[0px]'>
         {headerGroups.map((headerGroup) => (
           <tr {...headerGroup.getHeaderGroupProps()} className='bg-gray-200'>
